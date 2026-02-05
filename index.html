@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel adventures </title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header h1 {
+    color: blue;
+    margin: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:whitesmoke;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin: 5px 0;
+}
+
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 35px;
+    background-color: orange;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.shop-btn:hover {
+    background-color: darkorange;
+}
+
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.category {
+    width: 300px;
+    border: 1px black ;
+}
+
+.category h3 {
+    background:white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+.special-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.special-offer::before,
+.special-offer::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: grey;
+    margin: 0 20px;
+}
+</style>
+</head>
+
+<body>
+
+
+<header>
+    <h1>Travel Adventures</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destination</a>
+        <a href="#">Tours</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+
+<div class="banner">
+    <img src="images/travel2.webp" alt="Banner">
+
+    <div class="banner-text">
+        <h1>Explore The World</h1>
+        <a href="#" class="shop-btn">Discover More </a>
+    </div>
+</div>
+
+
+<div class="category-container">
+    <div class="category">
+        <h3 style="color:blue">Beach Escapes</h3>
+        <img src="images/travel 1.webp">
+    </div>
+
+    <div class="category">
+        <h3 style="color:blue">Mountain Treks</h3>
+        <img src="images/travel3.webp">
+    </div>
+
+    <div class="category">
+        <h3 style="color:blue">City Tours</h3>
+        <img src="/images/travel4.webp">
+    </div>
+</div>
+
+
+<div class="special-offer">
+   <h3 style="color:blue"> Popular Destination</h3>
+</div>
+
+</body>
+</html>
